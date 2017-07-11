@@ -29,7 +29,7 @@
  libvirt.VIR_CPU_COMPARE_SUPERSET. Or null plus an exception with an Error
  instance if occurred an error.
 
-### getCapabilities()
+### getCapabilities(function(err,result){})
  Provides a xml with capabilities of the hypervisor.
 #### Parameters:
  None.

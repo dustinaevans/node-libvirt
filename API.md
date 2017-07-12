@@ -29,10 +29,10 @@
  libvirt.VIR_CPU_COMPARE_SUPERSET. Or null plus an exception with an Error
  instance if occurred an error.
 
-### getCapabilities(function(err,result){})
+### getCapabilities()
  Provides a xml with capabilities of the hypervisor.
 #### Parameters:
- None.
+ callback(err,result)
 #### Return:
  An xml describing capabilities of the current hypervisor.
 
@@ -41,7 +41,7 @@
  (the result of the gethostname system call). If we are connected to
  a remote system, then this returns the hostname of the remote system.
 #### Parameters:
- None.
+ callback(err,result)
 #### Return:
 The system hostname or null plus an exception with an Error instance
 
